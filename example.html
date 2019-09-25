@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <script type="text/javascript" src="./query-to-regex.js"></script>
+  </head>
+  <body>
+    <pre id="output"></pre>
+    <script type="text/javascript">
+
+      const lines = [
+        `\n123\tFoo Bar`,
+        `\n456\tASDF`,
+        `\n789\tFoooo Barrr`,
+      ].join('').toLowerCase();
+
+      const query = 'fo ba';
+      const regex = q2r(query);
+      const regexp = new RegExp(regex, 'ig');
+
+      const results = q2r_search(lines, regexp);
+
+      document.getElementById('output').innerText = JSON.stringify(results, null, 2);
+    </script>
+  </body>
+</html>

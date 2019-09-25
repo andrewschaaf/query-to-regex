@@ -1,0 +1,9 @@
+{
+  "name": "query-to-regex",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/andrewschaaf/query-to-regex.git"
+  },
+  "author": "Andrew Schaaf <andrew@andrewschaaf.com>"
+}
